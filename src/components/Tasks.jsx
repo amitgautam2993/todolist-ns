@@ -46,6 +46,11 @@ const AddTask = ({ onCancel, onAddTask }) => {
           placeholder={`${dateFnsFormat(new Date(), FORMAT)}`}
           formatDate={formatDate}
           format={FORMAT}
+          dayPickerProps={{
+            modifiers: {
+              disabled: [{ before: new Date() }],
+            },
+          }}
         />
       </div>
     </div>
