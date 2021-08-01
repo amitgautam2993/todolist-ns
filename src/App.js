@@ -1,7 +1,16 @@
 import React from "react";
-//import Header from "./components/Header";
+import "./App.scss";
+import Header from "./components/Header";
+import Content from "./components/Content";
+// import Sidebar from "./components/Sidebar";
+// import Tasks from "./components/Tasks";
 
 const App = () => {
-  return <div>App Component hello</div>;
+  return (
+    <div>
+      <Header />
+      <Content />
+    </div>
+  );
 };
 export default App;
